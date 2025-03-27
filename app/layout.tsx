@@ -37,7 +37,7 @@ const user = {
 };
 const navigation = [
   { name: "Menu", href: "#menu", current: true },
-  { name: "Find us", href: "#loction", current: false },
+  { name: "Find us", href: "#location", current: false },
   { name: "Get to know us", href: "#about", current: false },
   // { name: "Calendar", href: "#", current: false },
   // { name: "Reports", href: "#", current: false },
@@ -76,6 +76,8 @@ export default function RootLayout({
                   <div className="flex items-center">
                     <div className="shrink-0">
                       <Image
+                        width={64}
+                        height={64}
                         alt="Curata Coffee"
                         src="/logo.jpg"
                         className="size-16"
