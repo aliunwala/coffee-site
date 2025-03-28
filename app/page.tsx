@@ -10,24 +10,33 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import HeroLanding from "@/components/heroLanding";
-
+import FoodMenuItem from "@/components/foodMenuItem";
+import FoodMenuSection from "@/components/foodMenuSection";
+import Example from "@/components/example";
+// import Example from "@/components/contactTest";
+// import Example from "@/components/bentoGridExample";
+import UpcomingLocations from "@/components/upcomingLocations";
+import DrinkMenu from "@/components/DrinkMenu";
+import HeroPopOver from "@/components/heroPopOver";
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col gap-4 ">
-        <HeroLanding></HeroLanding>
+      {/* <div className="flex flex-col gap-4 ">
         <div className="flex flex-col gap-4 ">
           <SectionHeading id="menu" title="Menu">
-            <p>Menu goes here</p>
           </SectionHeading>
-          <SectionHeading id="location" title="Find us">
-            <p>Where we will be next</p>
-          </SectionHeading>
-          <SectionHeading id="about" title="Get to know us">
-            <p>Get to know us text goes here</p>
-          </SectionHeading>
-        </div>
-      </div>
+          <FoodMenuSection>Drinks</FoodMenuSection>
+          <FoodMenuItem></FoodMenuItem>
+          <FoodMenuSection>Finger Food</FoodMenuSection>
+          <FoodMenuItem></FoodMenuItem>
+          </div>
+      </div> */}
+      {/* <HeroLanding></HeroLanding> */}
+
+      <HeroPopOver></HeroPopOver>
+      <DrinkMenu></DrinkMenu>
+      <UpcomingLocations></UpcomingLocations>
+      {/* <Example></Example> */}
     </>
   );
 }
