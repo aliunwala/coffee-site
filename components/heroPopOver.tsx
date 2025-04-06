@@ -131,42 +131,43 @@ const footerNavigation = {
 
 export default function HeroPopOver() {
   return (
-    <div className="bg-white ">
+    <div className="  bg-[url(/hero1.avif)] bg-cover h-[70vh] min-h-[50vh]">
       <Popover as="header" className="relative z-10">
-        <div className="bg-gray-50">
+        {/* <div className="bg-gray-50"> */}
+        <div>
           <nav
-            className="relative max-w-7xl mx-auto flex items-center justify-between pt-8 px-6 xl:px-8"
+            className="relative  mx-auto flex items-center  justify-around sm:justify-between pt-8 pb-4 px-6 xl:px-8 backdrop-blur-md"
             aria-label="Global"
           >
-            <div className="flex items-center justify-between w-full lg:w-auto">
+            <div className="flex items-center justify-between  lg:w-auto">
               <a href="#">
                 <span className="sr-only">Workflow</span>
                 <img
-                  className="h-8 w-auto sm:h-10 rounded-sm"
+                  className="h-8 w-auto sm:h-10 rounded-sm min-w-8"
                   // src="https://tailwindui.com/img/logos/workflow-mark.svg?color=purple&shade=600"
                   src="/logo.jpg"
                   alt=""
                 />
               </a>
-              <div className="-mr-2 flex items-center lg:hidden">
+              {/* <div className="-mr-2 flex items-center lg:hidden">
                 <PopoverButton className="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-grape-500">
                   <span className="sr-only">Open main menu</span>
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </PopoverButton>
-              </div>
+              </div> */}
             </div>
-            <div className="hidden space-x-10 lg:flex lg:ml-10">
+            <div className=" space-x-10 lg:flex lg:ml-10">
               {navigation.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-base font-medium text-gray-500 hover:text-gray-600"
+                  className="font-bold text-2xl text-gray-500 hover:text-gray-600"
                 >
                   {item.name}
                 </a>
               ))}
             </div>
-            <div className="hidden lg:flex lg:items-center lg:space-x-6">
+            <div className=" invisible sm:visible absolute sm:relative lg:flex lg:items-center lg:space-x-6">
               <a
                 href="#"
                 className="py-2 px-6 bg-white border border-transparent rounded-md shadow-md text-base font-medium text-grape-600 hover:bg-gray-50"
@@ -186,7 +187,7 @@ export default function HeroPopOver() {
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
-          <Popover.Panel
+          {/* <Popover.Panel
             focus
             className="absolute top-0 inset-x-0 p-2 transition transform origin-top lg:hidden"
           >
@@ -225,21 +226,23 @@ export default function HeroPopOver() {
                   >
                     Contact
                   </a>
-                </div>
+                </div> 
               </div>
             </div>
-          </Popover.Panel>
+          </Popover.Panel> */}
         </Transition>
       </Popover>
 
       {/* <main> */}
       {/* Header */}
-      <div className="py-24 bg-gray-50 sm:py-32">
-        <div className="max-w-md mx-auto pl-4 pr-8 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:px-8">
-          <h1 className="text-4xl leading-10 font-extrabold tracking-tight text-gray-900 text-center sm:text-5xl sm:leading-none lg:text-6xl">
+      {/* <div className="py-24 bg-gray-50 sm:py-32"> */}
+      <div className="py-24 sm:py-32">
+        <div className="max-w-md mx-auto pl-4 pr-8 sm:max-w-2xl sm:px-6 lg:max-w-4xl lg:px-8 backdrop-blur-md rounded-lg ">
+          {/* <div className="max-w-md mx-auto pl-4 pr-8 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:px-8 backdrop-blur-xs rounded-2xl "> */}
+          <h1 className="text-4xl leading-10 font-extrabold tracking-tight text-gray-900 text-center sm:text-5xl sm:leading-none lg:text-6xl ">
             {/* <h1 className="text-4xl font-bold tracking-tight text-secondary-foreground sm:text-6xl"> */}
             Coffee that will{" "}
-            <span className="text-blue-600">
+            <span className="text-[#002454]">
               <Typewriter
                 words={["blow your mind", "give you the tingles"]}
                 typeSpeed={100}
@@ -248,10 +251,27 @@ export default function HeroPopOver() {
               ></Typewriter>
             </span>
           </h1>
-          <p className="mt-6 max-w-3xl mx-auto text-xl leading-normal text-gray-500 text-center">
-            Convallis feugiat et aliquet pellentesque dictum nisi, velit.
-            Egestas fermentum adipiscing risus quam ac consectetur mattis turpis
-            tristique.
+          {/* <p className="mt-6 max-w-3xl mx-auto text-xl leading-normal text-gray-500 text-center">
+            Atx cold brew lovers, we have good news... <br></br>We’re launching
+            Curata Coffee💫 - a coffee experience that’s indulgent and all
+            natural.
+            </p> */}
+          {/* <p className="mt-6 max-w-3xl mx-auto text-xl leading-normal text-gray-500 text-center">
+            Curata means “cared for” in Italian, and that’s how we do everything
+            - using organic ingredients, house-made cold foams, and the aim to
+            bring a little joy to your day. No weird stuff, no shortcuts - just
+            really good coffee, made with care.
+            </p> */}
+          {/* <p className="mt-6 max-w-3xl mx-auto text-xl leading-normal text-gray-500 text-center">
+            Come see us at Barton Creek Farmers Market this{" "}
+            <b>Saturday from 9 AM - 1 PM</b>. We’ll be pouring silky-smooth
+            nitro cold brew topped with delicious cold foam. We hope to see you
+            soon.
+            </p> */}
+          <p className="mt-6 max-w-3xl mx-auto text-xl leading-normal text-black text-center">
+            Pouring silky-smooth nitro cold brew topped with delicious cold
+            foam. <br></br>Every Saturday from 9 AM - 1 PM at the Barton Creek
+            Farmers Market.
           </p>
         </div>
       </div>

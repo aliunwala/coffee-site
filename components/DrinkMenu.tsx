@@ -1,8 +1,31 @@
 import DrinkItem from "./DrinkItem";
 
 export default function DrinkMenu() {
+  const drinks = [
+    {
+      name: "Drink 1",
+      href: "/cup1.png",
+      text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use",
+
+      scale: 75,
+    },
+    {
+      name: "Drink 2",
+      href: "/cup2.png",
+      text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use",
+      scale: 75,
+    },
+    {
+      name: "Drink 3",
+      href: "/cup3.png",
+      text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use",
+      scale: 100,
+    },
+    // { name: "Blog", href: "#" },
+  ];
+
   return (
-    <div className="bg-gray-50 py-24 sm:py-32" id="menu">
+    <div className="bg-gray-50 py-12 sm:py-16" id="menu">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         {/* <h2 className="text-center text-base/7 font-semibold text-indigo-600">
           Deploy faster
@@ -11,12 +34,13 @@ export default function DrinkMenu() {
           Drink Menu
         </h2>
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
-          <DrinkItem></DrinkItem>
-          <DrinkItem></DrinkItem>
-          <DrinkItem></DrinkItem>
-          <DrinkItem></DrinkItem>
-          <DrinkItem></DrinkItem>
-          <DrinkItem></DrinkItem>
+          {drinks.map((drink) => (
+            <DrinkItem
+              name={drink.name}
+              href={drink.href}
+              text={drink.text}
+            ></DrinkItem>
+          ))}
 
           {/* <div className="relative max-lg:row-start-1">
             <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>

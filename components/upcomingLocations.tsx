@@ -5,7 +5,7 @@ function UpcomingLocations() {
     <>
       <div
         id="location"
-        className="grid grid-cols-1 gap-x-8 gap-y-10 pt-16 lg:grid-cols-3 pl-8 pr-8"
+        className="grid grid-cols-1 gap-x-8 gap-y-10 pt-16 lg:grid-cols-3 pl-8 pr-8 pb-16"
       >
         <div>
           <h2 className="text-3xl font-bold tracking-tight text-gray-900">

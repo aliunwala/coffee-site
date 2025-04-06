@@ -18,6 +18,7 @@ import Example from "@/components/example";
 import UpcomingLocations from "@/components/upcomingLocations";
 import DrinkMenu from "@/components/DrinkMenu";
 import HeroPopOver from "@/components/heroPopOver";
+import AboutUs from "@/components/aboutUs";
 export default function Home() {
   return (
     <>
@@ -36,6 +37,7 @@ export default function Home() {
       <HeroPopOver></HeroPopOver>
       <DrinkMenu></DrinkMenu>
       <UpcomingLocations></UpcomingLocations>
+      <AboutUs></AboutUs>
       {/* <Example></Example> */}
     </>
   );
