@@ -161,16 +161,16 @@ export default function HeroPopOver() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="font-bold text-2xl text-gray-500 hover:text-gray-600"
+                  className="font-bold sm:text-2xl text-xl text-gray-800 hover:text-gray-600"
                 >
                   {item.name}
                 </a>
               ))}
             </div>
-            <div className=" invisible sm:visible absolute sm:relative lg:flex lg:items-center lg:space-x-6">
+            <div className="  lg:flex lg:items-center lg:space-x-6">
               <a
                 href="#"
-                className="py-2 px-6 bg-white border border-transparent rounded-md shadow-md text-base font-medium text-grape-600 hover:bg-gray-50"
+                className=" invisible sm:visible absolute sm:relative py-2 px-6 bg-white border border-transparent rounded-md shadow-md text-base font-bold text-grape-600 hover:bg-gray-50"
               >
                 Contact
               </a>
@@ -239,7 +239,7 @@ export default function HeroPopOver() {
       <div className="py-24 sm:py-32">
         <div className="max-w-md mx-auto pl-4 pr-8 sm:max-w-2xl sm:px-6 lg:max-w-4xl lg:px-8 backdrop-blur-md rounded-lg ">
           {/* <div className="max-w-md mx-auto pl-4 pr-8 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:px-8 backdrop-blur-xs rounded-2xl "> */}
-          <h1 className="text-4xl leading-10 font-extrabold tracking-tight text-gray-900 text-center sm:text-5xl sm:leading-none lg:text-6xl ">
+          <h1 className="text-4xl leading-10 font-extrabold tracking-tight text-gray-900 text-center sm:text-5xl sm:leading-none lg:text-6xl min-h-[120px]">
             {/* <h1 className="text-4xl font-bold tracking-tight text-secondary-foreground sm:text-6xl"> */}
             Coffee that will{" "}
             <span className="text-[#002454]">
@@ -268,10 +268,12 @@ export default function HeroPopOver() {
             nitro cold brew topped with delicious cold foam. We hope to see you
             soon.
             </p> */}
-          <p className="mt-6 max-w-3xl mx-auto text-xl leading-normal text-black text-center">
-            Pouring silky-smooth nitro cold brew topped with delicious cold
-            foam. <br></br>Every Saturday from 9 AM - 1 PM at the Barton Creek
-            Farmers Market.
+          <p className="mt-6 max-w-3xl mx-auto text-2xl leading-normal text-black text-center">
+            Pouring silky-smooth nitro cold brew topped with delicious cold foam
+            every{" "}
+            <span className="font-bold">
+              Saturday from 9 AM - 1 PM at the Barton Creek Farmers Market.
+            </span>
           </p>
         </div>
       </div>
