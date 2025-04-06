@@ -132,7 +132,7 @@ const footerNavigation = {
 export default function HeroPopOver() {
   return (
     <div className="  bg-[url(/hero1.avif)] bg-cover h-[70vh] min-h-[50vh]">
-      <Popover as="header" className="relative z-10">
+      <Popover as="header" className="fixed w-full top-0 z-10">
         {/* <div className="bg-gray-50"> */}
         <div>
           <nav
@@ -169,7 +169,7 @@ export default function HeroPopOver() {
             </div>
             <div className="  lg:flex lg:items-center lg:space-x-6">
               <a
-                href="#"
+                href="#contact"
                 className=" invisible sm:visible absolute sm:relative py-2 px-6 bg-white border border-transparent rounded-md shadow-md text-base font-bold text-grape-600 hover:bg-gray-50"
               >
                 Contact

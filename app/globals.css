@@ -120,3 +120,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+html
+{
+  scroll-padding-top: 8vw; /* height of sticky header */
+}
