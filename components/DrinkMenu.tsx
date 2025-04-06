@@ -34,8 +34,9 @@ export default function DrinkMenu() {
           Drink Menu
         </h2>
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
-          {drinks.map((drink) => (
+          {drinks.map((drink, idx) => (
             <DrinkItem
+              key={(drink.name + idx).replaceAll(" ", "")}
               name={drink.name}
               href={drink.href}
               text={drink.text}

@@ -3,7 +3,7 @@ interface DrinkItemProps {
   name: string;
   href: string;
   text: string;
-  scale: string;
+  scale?: string;
 }
 
 function DrinkItem({ name, href, text, scale }: DrinkItemProps) {
