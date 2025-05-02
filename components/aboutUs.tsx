@@ -8,10 +8,10 @@ function AboutUs() {
         className="grid grid-cols-1 gap-x-8 gap-y-10 pt-16 lg:grid-cols-3 pl-8 pr-8 pb-16"
       >
         <div>
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+          <h2 className="text-3xl font-bold tracking-tight themePink">
             Who are we?
           </h2>
-          <p className="mt-4 leading-7 text-gray-600">
+          <p className="mt-4 leading-7 themeWhite">
             Curata Coffee a husband-and-wife duo serving up coffee that’s as
             intentional as it is delicious. Our nitro cold brew and matchas
             lattes are brewed with clean, organic ingredients. Topped with

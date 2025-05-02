@@ -5,13 +5,13 @@ function UpcomingLocations() {
     <>
       <div
         id="location"
-        className="grid grid-cols-1 gap-x-8 gap-y-10 pt-16 lg:grid-cols-3 pl-8 pr-8 pb-16"
+        className="grid grid-cols-1 gap-x-8 gap-y-10 pt-16 lg:grid-cols-3 pl-8 pr-8 pb-16 secondaryBlue"
       >
         <div>
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+          <h2 className="text-3xl font-bold tracking-tight themePink">
             Upcoming Locations
           </h2>
-          <p className="mt-4 leading-7 text-gray-600">
+          <p className="mt-4 leading-7 text-gray-600 themeWhite">
             Since we are a small business, we keep mobile and will doing popups
             at these venues: (Hope to see ya there!)
           </p>

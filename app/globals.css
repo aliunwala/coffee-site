@@ -1,6 +1,24 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+body {
+  background-color: #002454;
+}
+
+.secondaryBlue{
+  background-color: #0b193e;
+}
+.themePink{
+  color: #FFB5EA
+}
+.themeBackgroundPink{
+  background-color: #FFB5EA
+}
+
+.themeWhite{
+  color: #EDEDED
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

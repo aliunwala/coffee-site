@@ -131,12 +131,12 @@ const footerNavigation = {
 
 export default function HeroPopOver() {
   return (
-    <div className="  bg-[url(/hero1.avif)] bg-cover h-[70vh] min-h-[50vh]">
-      <Popover as="header" className="fixed w-full top-0 z-10">
+    <div className="bg-center bg-[url(/coffee5.jpg)] bg-cover h-[70vh] min-h-[50vh]">
+      <Popover as="header" className=" w-full">
         {/* <div className="bg-gray-50"> */}
         <div>
           <nav
-            className="relative  mx-auto flex items-center  justify-around sm:justify-between pt-8 pb-4 px-6 xl:px-8 backdrop-blur-md"
+            className="relative mx-auto flex items-center justify-around sm:justify-between pt-2 pb-2 px-4 py-4 xl:px-8 backdrop-blur-md"
             aria-label="Global"
           >
             <div className="flex items-center justify-between  lg:w-auto">
@@ -161,16 +161,16 @@ export default function HeroPopOver() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="font-bold sm:text-2xl text-xl text-gray-800 hover:text-gray-600"
+                  className="font-bold  text-base text-gray-800 hover:text-gray-600"
                 >
                   {item.name}
                 </a>
               ))}
             </div>
-            <div className="  lg:flex lg:items-center lg:space-x-6">
+            <div className="  lg:flex lg:items-center lg:space-x-6 ">
               <a
                 href="#contact"
-                className=" invisible sm:visible absolute sm:relative py-2 px-6 bg-white border border-transparent rounded-md shadow-md text-base font-bold text-grape-600 hover:bg-gray-50"
+                className=" invisible sm:visible absolute sm:relative py-2 px-6 themeBackgroundPink border border-transparent rounded-md shadow-md text-base font-bold text-grape-600 hover:bg-gray-50"
               >
                 Contact
               </a>
@@ -237,12 +237,12 @@ export default function HeroPopOver() {
       {/* Header */}
       {/* <div className="py-24 bg-gray-50 sm:py-32"> */}
       <div className="py-24 sm:py-32">
-        <div className="max-w-md mx-auto pl-4 pr-8 sm:max-w-2xl sm:px-6 lg:max-w-4xl lg:px-8 backdrop-blur-md rounded-lg ">
+        <div className="max-w-md mx-auto pl-4 pr-8 sm:max-w-2xl sm:px-6 lg:max-w-4xl lg:px-8 backdrop-blur-2xl rounded-lg ">
           {/* <div className="max-w-md mx-auto pl-4 pr-8 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:px-8 backdrop-blur-xs rounded-2xl "> */}
           <h1 className="text-4xl leading-10 font-extrabold tracking-tight text-gray-900 text-center sm:text-5xl sm:leading-none lg:text-6xl min-h-[120px]">
             {/* <h1 className="text-4xl font-bold tracking-tight text-secondary-foreground sm:text-6xl"> */}
             Coffee that will{" "}
-            <span className="text-[#002454]">
+            <span className="themePink">
               <Typewriter
                 words={["blow your mind", "give you the tingles"]}
                 typeSpeed={100}
@@ -271,7 +271,7 @@ export default function HeroPopOver() {
           <p className="mt-6 max-w-3xl mx-auto text-2xl leading-normal text-black text-center">
             Pouring silky-smooth nitro cold brew topped with delicious cold foam
             every{" "}
-            <span className="font-bold">
+            <span className="font-bold ">
               Saturday from 9 AM - 1 PM at the Barton Creek Farmers Market.
             </span>
           </p>
